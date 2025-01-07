@@ -1,0 +1,40 @@
+<section id="portfolio" class="portfolio">
+  <div class="container">
+      <div class="text-white">
+          <h2 class="text-uppercase fw-bolder fs-1 my-3 text-center">portfolio component</h2>
+          <div class="icons mb-3 d-flex justify-content-center align-items-center">
+              <div class="line me-3"></div>
+              <i class="fas fa-star"></i>
+              <div class="line ms-3"></div>
+          </div>
+      </div>
+      <div class="row g-5">
+        @for (image of imgs; track $index) {<div class="col-md-4">
+          <div class="card">
+              <img [src]="image" class="w-100 cardImg rounded-3" alt="">
+              <div (click)="openImg(imgIndex)" class="hover-color d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-plus text-white"></i>
+              </div>
+          </div>
+      </div>}
+
+
+      </div>
+  </div>
+</section>
+<div class="light-container " [class.d-none]="!showLightContainer">
+  <div class="light-box ">
+      <div class="position-relative ">
+          <img [src]="imgSrc" class="w-100" alt="img">
+          <i (click)="closeImg()" id="close" class="fa-solid fa-circle-xmark fa-2x text-white"></i>
+
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+          <i class="fa-solid fa-chevron-left fa-2x text-white prev" (click)="prevImage()"></i>
+          <i class="fa-solid fa-chevron-right fa-2x text-white next" (click)="nextImage()"></i>
+      </div>
+
+
+
+  </div>
+</div>

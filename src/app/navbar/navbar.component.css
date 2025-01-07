@@ -1,0 +1,25 @@
+.bg-link{
+  background-color: #1ABC9C;
+}
+nav {
+
+  background-color: #2C3E50;
+}
+
+nav .navbar-brand {
+  font-size: 32px !important;
+  color: white !important;
+  font-weight: 700 !important;
+
+}
+nav ul li {
+  padding-inline: 8px;
+}
+nav ul .nav-item .nav-link {
+  position: relative;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 16px;
+  text-transform: uppercase;
+
+}

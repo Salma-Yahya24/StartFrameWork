@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  background-color: #1ABC9C;
+}
+h2{
+  font-size: 37px;
+  font-weight: 700;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: white;
+}

@@ -1,0 +1,108 @@
+#portfolio {
+  min-height: calc(100vh - 6.25rem);
+  margin-top: 6.25rem;
+  padding: 1.875rem;
+}
+
+.line {
+  background-color: #fff;
+  width: 5rem;
+  height: .25rem;
+  background-color: #2C3E50;
+}
+
+h2,
+.icons i {
+  color: #2C3E50;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  overflow: hidden;
+}
+
+.hover-color {
+  background-color: #1abc9ce6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.6s;
+}
+
+.card:hover .hover-color {
+  opacity: 1;
+}
+
+.card i {
+  font-size: 6rem;
+}
+
+.light-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-container .light-box {
+  width: 600px;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.light-container .light-box #close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.light-container .light-box i {
+  cursor: pointer;
+}
+
+.light-container .light-box .prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.light-container .light-box .next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+@media (max-width: 500px) {
+  .light-container .light-box {
+      width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .light-container .light-box {
+      width: 350px;
+  }
+}
+
+@media (max-width: 360px) {
+  .light-container .light-box {
+      width: 320px;
+  }
+}
+
+@media (max-width: 355px) {
+  .light-container .light-box {
+      width: 270px;
+  }
+}
