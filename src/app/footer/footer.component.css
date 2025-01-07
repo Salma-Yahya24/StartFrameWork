@@ -26,3 +26,16 @@ h3{
   padding-block: 20px;
   background-color: #1A252F;
 }
+
+
+
+
+
+
+
+
+@media(max-width:767px){
+  .around{
+    padding: 10px 0 50px;
+  }
+}
